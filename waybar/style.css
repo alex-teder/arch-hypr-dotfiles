@@ -1,0 +1,86 @@
+* {
+  font-family: monospace;
+}
+
+window#waybar {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  border: none;
+  border-radius: 0;
+  color: white;
+}
+
+#workspaces button {
+  border-radius: 3px;
+  padding: 0 5px;
+  background: transparent;
+  color: white;
+}
+
+#workspaces button.active {
+  background: white;
+  color: black;
+}
+
+#workspaces button.urgent {
+  background: darkred;
+  color: white;
+}
+
+#submap {
+  padding: 0 2rem;
+  background-color: darkred;
+}
+
+#cpu {
+  padding: 0 1rem;
+  margin: 0 0.5rem 0 0;
+}
+
+#cpu.high {
+  background: darkred;
+}
+
+#pulseaudio {
+  margin: 0 2rem 0 0;
+}
+
+#network {
+  margin: 0 2rem 0 0;
+}
+
+#network.disabled,
+#network.disconnected {
+  color: red;
+}
+
+#bluetooth {
+  color: white;
+  margin: 0 1.3rem 0 0;
+}
+
+#bluetooth.connected {
+  color: deepskyblue;
+}
+
+#bluetooth.disabled,
+#bluetooth.off {
+  color: #666;
+}
+
+#tray * {
+  padding: 0 10px;
+}
+
+#language {
+  padding: 0;
+  margin: 0 1.3rem 0 0;
+}
+
+#clock {
+  border-radius: 3px;
+  margin: 0 1rem 0 0;
+}
+
+#custom-exit {
+  padding: 0 20px 0 0;
+}

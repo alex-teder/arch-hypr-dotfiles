@@ -1,0 +1,47 @@
+* {
+  font-family: "FiraCode Nerd Font";
+}
+
+window {
+  margin: 0px;
+  border: 1px solid #f3f3f3;
+  background-color: rgba(40, 35, 50, 0.5);
+  /* background-color: #282a36; */
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  color: #f8f8f2;
+  background-color: #14172a;
+  /* background-color: rgba(40, 35, 50, 0.5); */
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  /* background-color: #282a36; */
+  background-color: rgba(30, 25, 40, 0.5);
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  /* background-color: #282a36; */
+  background-color: rgba(25, 25, 25, 0.5);
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px 10px;
+  border: none;
+  color: #f8f8f2;
+}
+
+#entry:selected {
+  background-color: #2443aa;
+}

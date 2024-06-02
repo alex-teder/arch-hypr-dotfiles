@@ -1,0 +1,76 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/submap"],
+    "modules-right": [
+	"cpu", 
+	"pulseaudio",
+       	"network", 
+	"bluetooth",
+       	"hyprland/language", 
+	"clock", 
+	"custom/exit"
+    ],
+    "cpu": {
+        "format": "{usage}% ",
+	"states": {
+	    "high": 80
+	},
+	"interval": 3,
+	"on-click": "alacritty -e htop"
+    },
+    "pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+	"format-muted": "",
+	"scroll-step": 1,
+	"on-click": "pavucontrol",
+	"ignored-sinks": ["Easy Effects Sink"]
+    },
+    "bluetooth": {
+    	"format": "",
+	"on-click": "blueman-manager"
+    },
+    "network": {
+	"tooltip": false,
+	"format-wifi": "",
+	"format-ethernet": "",
+	"format-disconnected": "down",
+	"on-click": "alacritty -e nmcli"
+    },
+    "hyprland/language": {
+        "format": "{}",
+	"format-en": "en",
+	"format-ru": "ru"
+    },
+    "clock": {
+        "format": "{:%A, %d-%m-%Y %H:%M:%S}",
+	"interval": 1,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#fff'><b>{}</b></span>",
+                "days":       "<span color='#ccc'><b>{}</b></span>",
+                "weekdays":   "<span color='skyblue'><b>{}</b></span>",
+                "today":      "<span color='#000' background='#fff'><b>{}</b></span>"
+	    }
+        }
+    },
+    "custom/exit": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}
